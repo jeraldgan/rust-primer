@@ -1,0 +1,18 @@
+[workspace]
+
+members = [
+  "01-hello/solution",
+  "02-basics/demo",
+  "02-basics/solution",
+  "02-basics/exercise",
+  "03-structs-lifetimes/demo",
+  "03-structs-lifetimes/solution",
+  "03-structs-lifetimes/exercise",
+  "04-generics-traits/demo",
+  "04-generics-traits/solution",
+  "04-generics-traits/exercise",
+  "05-match-result/demo",
+  "05-match-result/solution",
+  "05-match-result/exercise",
+  "06-strings/demo",
+]
