@@ -35,7 +35,7 @@ mod tests {
     #[test]
     fn lifetimes_borrow_checker() {
         // This is an implicit lifetime example
-        // When you get programming more complex stuff you will probably encounter explicit lifetimes
+        // When you get programming more complex stuff you will encounter explicit lifetimes
         fn take_ownership_of_my_vec<T>(_: Vec<T>) {}
 
         let my_vec = vec![0, 1, 2, 3];

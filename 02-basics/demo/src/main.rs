@@ -30,6 +30,11 @@ fn main() {
     //     *n = n + 2;
     // }
 
+    // Destructuring
+    let x = (1, 2);
+    let (first, second) = x;
+    dbg!(first, second);
+
     // Iterations + mutability
     let mut numbers = [1, 2, 3, 4, 5];
     for n in numbers.iter_mut() {
@@ -63,6 +68,10 @@ fn main() {
 
     // Importing functions
     let tripled: Vec<i32> = numbers.iter().map(other_source_file::triple).collect();
+    dbg!(tripled);
+
+    use other_source_file::triple;
+    let tripled: Vec<i32> = numbers.iter().map(triple).collect();
     dbg!(tripled);
 
     // Strings? Later.

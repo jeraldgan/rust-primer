@@ -8,6 +8,10 @@ About 3–4 hours
 
 ---
 
+## Rust
+
+>Rust has been voted the "most loved programming language" in the Stack Overflow Developer Survey every year since 2016.
+
 ## Me
 
 - First line of Rust code in 2014
@@ -80,3 +84,4 @@ It's okay to not come out of this with a complete understandig of what happened!
 - [Rust for C++ programmers](https://github.com/nrc/r4cppp)
 - [Considering Rust](https://www.youtube.com/watch?v=DnT-LUQgc7s) ([slides](https://jon.thesquareplanet.com/slides/considering-rust/export.pdf))
 - [Rustonomicon](https://doc.rust-lang.org/nomicon/) "The Dark Arts of Unsafe Rust"
+- [2020 State of Rust](https://blog.rust-lang.org/2020/12/16/rust-survey-2020.html)

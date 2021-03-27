@@ -4,12 +4,16 @@ Strings were a confusing point for me when I started learning Rust without any s
 
 Generally, there are two types of strings in Rust you'll encounter
 
-`&str` and `String`
+`&str` (slice) and `String`
 
 Think of
 
 - `&str` as a fixed-length array of bytes
+  - Like a C++ `char*`, but UTF-8
+
 - `String` as a variable-length array of bytes (usually UTF-8)
+  - Has a underlying buffer, owns the buffer
+  - Like a C++ `std::String`
 
 ## Why?
 

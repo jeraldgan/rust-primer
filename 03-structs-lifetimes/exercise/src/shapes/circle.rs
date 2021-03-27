@@ -1,3 +1,7 @@
+// If you have forgotten; don't worry I've got you:
+// The area of a circle is πr^2, or Pi * radius * radius
+// https://doc.rust-lang.org/nightly/std/primitive.f64.html
+// https://doc.rust-lang.org/std/f64/consts/index.html
 pub struct Circle {}
 
 mod tests {

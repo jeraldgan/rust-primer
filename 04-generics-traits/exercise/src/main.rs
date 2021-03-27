@@ -17,20 +17,19 @@ mod tests {
     #[test]
     fn test_generic_struct() {
         struct Point<T> {
-            _x: i32,
             value: T,
         };
 
-        // You need to supply the correct generics here
-        // let mut map: HashMap<?, ?> = HashMap::new();
+        // You need to supply the correct generics here, replacing `?`
+        let mut map: HashMap<&str, ???> = HashMap::new();
 
         // Then insert Points into `map` to make the assertions true
         // map.insert(, Point { });
         // map.insert(, Point { });
 
         // Note `unwrap`: we will be going into this next chapter
-        assert_eq!(map.get(&-1).unwrap().value, 1.0);
-        assert_eq!(map.get(&2).unwrap().value, 2.0);
+        assert_eq!(map.get("foo").unwrap().value, 1.0);
+        assert_eq!(map.get("bar").unwrap().value, 2.0);
     }
 
     #[test]

@@ -31,7 +31,7 @@ fn collections() -> u8 {
     }
     return sum;
 
-    // Or,
+    // Uusing iterators:
     // xs.iter().fold(0, |acc, x| acc + x)
 }
 

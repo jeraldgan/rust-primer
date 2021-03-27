@@ -8,6 +8,8 @@ Creating safe, reusable code
 - Traits are supercharged interfaces!
 - Can be implemented for existing types (you can't do this in Java!)
   - Traits are implemented on structs, structs do not implement traits
+- Similar to type classes in Haskell or Scala
+  - Some features not yet implemented
 
 ---
 

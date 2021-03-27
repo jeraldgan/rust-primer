@@ -1,11 +1,13 @@
 use std::process;
 
-fn main() {
+fn main() -> Result<(), ()> {
     struct Point {
         x: f64,
         y: f64,
     };
 
+    // Tagged unions: enums can hold values
+    // Generics are supported too
     enum DrawCommand {
         Begin,
         // Tuple in enum
@@ -41,7 +43,7 @@ fn main() {
         match command {
             DrawCommand::End => println!("End!"),
             DrawCommand::Begin | DrawCommand::Clear => println!("Begin!"),
-            // Match guard
+            // Conditonal match: match guard
             DrawCommand::Point((x, _)) if x < 0.0 => {
                 println!("Invalid command: cannot draw left of 0!")
             }
@@ -49,7 +51,7 @@ fn main() {
             DrawCommand::Point((x, y)) => println!("Drawing at {} {}!", x, y),
             // Exhaustive: everything else
             _ => println!("Unhandled command!"),
-            // There's more, but this are the basics
+            // There's more, but these are the basics
         }
     }
 
@@ -102,4 +104,7 @@ fn main() {
     if let x = Some(wrapper) {
         dbg!(x);
     }
+
+    // Question mark sugar: return an Error if it fails to unwrap
+    let value = wrapper?;
 }

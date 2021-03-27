@@ -1,0 +1,7 @@
+{
+  "age": 1,
+  "weight": null,
+  "preferences": {
+    "food": ["taco", "cookie", "cake"]
+  }
+}

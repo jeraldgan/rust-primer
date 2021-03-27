@@ -1,13 +1,19 @@
 # What is Rust?
 
+- Compiled
+  - no language runtime needed, no GC
+
+- Staticlly-typed
+  - all types known at compile time
+
 - Systems language
   - C/C++ compatiability
 
 - Functional features
   - pattern matching
-  - `Option`/`Some`
+  - abstract data types
   - traits/typeclasses
-  - ADTs
+  - `Option`/`Some`
 
 - Safe by default
   - No `null`
@@ -18,9 +24,16 @@
 ## Objectives
 
 - Get your feet wet!
-- Basic syntax (there's more that's not covered)
+- Absolute basic syntax
 - Variables
 - Functions
 - Conditionals
 
+## Exercise
+
 For the exercise, run the tests with `cargo test`.
+
+  - `cd exercise`
+  - `cargo test`
+
+Make the tests pass!
