@@ -1,6 +1,17 @@
+// What is a trait? It's like an interface as you can see
 trait Shape {
     fn area(&self) -> f64;
 }
+
+// Remember .clone()? It's a trait
+
+// impl Clone for Circle {
+//     fn clone(&self) -> Self {
+//         Circle {
+//             radius: self.radius,
+//         }
+//     }
+// }
 
 // You can derive traits (auto implementation)
 #[derive(Clone, Copy, Debug, PartialEq)]
@@ -8,12 +19,15 @@ struct Circle {
     radius: f64,
 }
 
+// Concrete implementation of traits
 impl Shape for Circle {
     fn area(&self) -> f64 {
         std::f64::consts::PI * self.radius.powf(2.0)
     }
 }
 
+// Implement a trait on a totally different struct
+#[derive(Clone, Copy, Debug, PartialEq)]
 struct Rectangle {
     width: f64,
     height: f64,
@@ -66,8 +80,9 @@ fn main() {
 
     // More advanced traits
     //
-    // Generics get more complicated when mixed with traits
+    // Generics get complicated when mixed with traits
     // It's because we don't know how large a Shape will take in memory
+    // and the compiler needs to figure out how to allocate it
     // Rectangle has 2 fields; Circle 1
     // A Box is basically a safe pointer to some place in memory (the heap)
     let shapes: Vec<Box<dyn Shape>> = vec![Box::new(circle), Box::new(rectangle)];

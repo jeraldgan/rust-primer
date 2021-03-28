@@ -30,19 +30,19 @@ struct Profile {
 // Run this with `cargo run -- -i input.json`
 fn main() {
     // Read CLI args
-    // https://github.com/clap-rs/clap#quick-example
+    // https://github.com/clap-rs/clap#using-derive-macros
     // Derive is the easiest
-    let opts: MyOpts = MyOpts::parse();
+    let opts: MyOpts = todo!();
     dbg!(&opts);
 
     // Read the file https://doc.rust-lang.org/book/ch12-02-reading-a-file.html
 
-    // Parse the JSON
-    let profile: Profile = serde_json::from_str(&contents)?;
+    // Exercise for the reader: parse the JSON using `serde_json::from_str`
+    let profile: Profile = todo!();
     dbg!(&profile);
 
     // Print it!
-    println!("{}", emoji_food_preferences(&profile));
+    todo!();
 }
 
 fn emoji_food_preferences(profile: &Profile) -> String {

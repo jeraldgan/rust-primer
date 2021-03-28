@@ -1,6 +1,6 @@
 use std::process;
 
-fn main() -> Result<(), ()> {
+fn main() {
     struct Point {
         x: f64,
         y: f64,
@@ -105,6 +105,6 @@ fn main() -> Result<(), ()> {
         dbg!(x);
     }
 
-    // Question mark sugar: return an Error if it fails to unwrap
-    let value = wrapper?;
+    // Question mark sugar return an Error if it fails to unwrap
+    // let value = wrapper?;
 }

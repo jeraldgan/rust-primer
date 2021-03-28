@@ -24,8 +24,8 @@ mod tests {
         let mut map: HashMap<&str, Point<f64>> = HashMap::new();
 
         // Then insert Points into `map` to make the assertions true
-        map.insert(-1, Point { value: 1.0 });
-        map.insert(2, Point { value: 2.0 });
+        map.insert("foo", Point { value: 1.0 });
+        map.insert("bar", Point { value: 2.0 });
 
         // Note `unwrap`: we will be going into this next chapter
         assert_eq!(map.get("foo").unwrap().value, 1.0);

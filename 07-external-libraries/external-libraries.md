@@ -21,3 +21,19 @@
 
 - Import external libraries
 - Add external libraries
+
+## Exercise
+
+Guided example on adding external libraries.
+
+We will be using two libraries to create our profile printer.
+
+- `serde` and `serde_json` to deserialise JSON into structs
+- `clap` to parse CLI arguments.
+
+To begin,
+
+- Add `serde`, `clap` as libraries to `Cargo.toml` (you just have to uncomment)
+- import the traits provided by the libraries (`clap::Clap`, `serde::{Deserialize, Serialize}`)
+- Annotate structs with `Serialize`, `Deserialize`
+- Fill out `main`
