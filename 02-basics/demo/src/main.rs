@@ -50,8 +50,16 @@ fn main() {
         }
     }
 
+    // Statement
+    let y = 1;
+
+    // Expression
+    let _ = if y == 1 { "dog" } else { "cat" };
+
     // Iterators
     let numbers = [1, 2, 3, 4, 5];
+    // Rust autoimports a bunch of stuff for ergonomic reasons
+    // use std::prelude::v1::*;
     let doubled: Vec<i32> = numbers.iter().map(|n| n * 2).collect();
     dbg!(doubled);
 
