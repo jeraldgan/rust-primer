@@ -1,6 +1,7 @@
 [workspace]
 
 members = [
+  "01-hello/demo",
   "01-hello/exercise",
   "01-hello/solution",
   "02-basics/demo",
