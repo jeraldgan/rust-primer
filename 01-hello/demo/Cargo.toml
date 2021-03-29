@@ -1,5 +1,5 @@
 [package]
-name = "demo-hello"
+name = "demo-stuff"
 version = "0.1.0"
 authors = ["g"]
 edition = "2018"
